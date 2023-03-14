@@ -6,11 +6,13 @@
   <h2>Gerador de números para Mega SENA</h2>
 
   <div class="numbers">
+    <div class="number" *ngFor="let number of currentSequence">
+      {{ number }}
+    </div>
   </div>
 
   <button (click)="newSequence()">Gerar sequência</button>
 </section>
-
 
 <footer class="mg-footer">
   <span>equipe 09 - trabalho de matemática para computação - github</span>
